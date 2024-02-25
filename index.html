@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="element">Acesta este Charles Leclerc</h1>
+        <img src="https://i.ytimg.com/vi/A0Z5H31nJP0/hqdefault.jpg">
+        <h2 class="element">Charles este in depresie:(</h2>
+        <button id="buton-misto" onclick="showHappyImage()">Apasa butonul ca să-l faci fericit pe Charles</button>
+        <br><br>
+        <img id="happy-charles" src="https://static.independent.co.uk/2022/04/19/09/newFile-2.jpg" style="display: none;"
+            width="448"
+            height="336"/>
+    </div>
+
+    <script>
+        function showHappyImage() {
+            var img = document.getElementById('happy-charles');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
